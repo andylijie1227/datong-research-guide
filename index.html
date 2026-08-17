@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>晋北+锡林郭勒5日 · 人教版历史教材研学打卡指南</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+  :root {
+    --ink: #2c1810;
+    --ink-light: #5a3e2b;
+    --parchment: #faf6f0;
+    --parchment-dark: #f0e8d8;
+    --vermillion: #c23a2b;
+    --vermillion-light: #e85644;
+    --gold: #c8a45c;
+    --gold-light: #e8cc7a;
+    --jade: #4a8c6f;
+    --jade-light: #6bb08e;
+    --indigo: #2d4a6f;
+    --indigo-light: #4a6f9c;
+    --stone: #8a7e72;
+    --shadow: rgba(44,24,16,0.08);
+    --shadow-md: rgba(44,24,16,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--parchment);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(135deg, #2c1810 0%, #5a3e2b 40%, #8b5e3c 70%, #c23a2b 100%);
+    color: #fff;
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+    opacity: 0.5;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    padding: 4px 18px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(4px);
+  }
+  .hero h1 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 2.2em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+  .hero .subtitle {
+    font-size: 15px;
+    opacity: 0.85;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+  .hero .meta-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .hero .meta-item {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 13px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .hero .meta-item strong { display: block; font-size: 18px; margin-bottom: 2px; }
+
+  /* ===== LAYOUT ===== */
+  .container { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+
+  /* ===== CONCEPT MAP ===== */
+  .concept-section {
+    background: linear-gradient(135deg, var(--indigo) 0%, #1a3350 100%);
+    color: #fff;
+    margin: 30px auto;
+    max-width: 820px;
+    border-radius: 16px;
+    padding: 36px 30px;
+    box-shadow: 0 8px 30px rgba(45,74,111,0.25);
+  }
+  .concept-section h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .timeline-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 20px 0;
+  }
+  .timeline-node {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    padding-bottom: 18px;
+  }
+  .timeline-node:last-child { padding-bottom: 0; }
+  .timeline-dot-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20px;
+    flex-shrink: 0;
+  }
+  .timeline-dot {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--gold-light);
+    border: 2px solid var(--gold);
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .timeline-line {
+    width: 2px;
+    flex-grow: 1;
+    background: rgba(200,164,92,0.3);
+    margin-top: 4px;
+  }
+  .timeline-node:last-child .timeline-line { display: none; }
+  .timeline-text { font-size: 14px; line-height: 1.6; padding-top: -2px; }
+  .timeline-text strong { color: var(--gold-light); }
+  .timeline-text .year { color: var(--gold-light); font-weight: 700; }
+
+  .quote-box {
+    background: rgba(255,255,255,0.08);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.8;
+  }
+  .quote-source { display: block; font-style: normal; font-size: 12px; opacity: 0.7; margin-top: 6px; }
+
+  /* ===== DAY SECTION ===== */
+  .day-section {
+    margin: 36px auto;
+    max-width: 820px;
+  }
+  .day-header {
+    border-radius: 16px 16px 0 0;
+    padding: 24px 28px 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .day-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2l4 3.5-4 3z'/%3E%3C/g%3E%3C/svg%3E") repeat;
+  }
+  .day-header > * { position: relative; z-index: 1; }
+  .day-header .day-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin-bottom: 6px;
+  }
+  .day-header h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .day-header .day-theme {
+    font-size: 14px;
+    opacity: 0.85;
+    font-weight: 300;
+  }
+  .day1 .day-header { background: linear-gradient(135deg, var(--vermillion) 0%, #9c2d22 100%); }
+  .day2 .day-header { background: linear-gradient(135deg, var(--gold) 0%, #9c7a3a 100%); }
+  .day3 .day-header { background: linear-gradient(135deg, var(--stone) 0%, #6b5f52 100%); }
+  .day4 .day-header { background: linear-gradient(135deg, var(--jade) 0%, #356b50 100%); }
+  .day5 .day-header { background: linear-gradient(135deg, var(--indigo) 0%, #1f3652 100%); }
+
+  .day-body {
+    background: #fff;
+    border-radius: 0 0 16px 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px var(--shadow);
+  }
+
+  /* ===== SPOT CARD ===== */
+  .spot-card {
+    border: 1px solid #e8ddd0;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #fff 0%, var(--parchment) 100%);
+    transition: box-shadow 0.2s;
+  }
+  .spot-card:last-child { margin-bottom: 0; }
+  .spot-card:hover { box-shadow: 0 4px 16px var(--shadow-md); }
+  .spot-card.top-pick {
+    border: 2px solid var(--vermillion);
+    background: linear-gradient(135deg, #fff 0%, #fef5f3 100%);
+    position: relative;
+  }
+  .spot-card.top-pick::before {
+    content: '🔥 必考';
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    background: var(--vermillion);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 12px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+  }
+
+  .spot-name {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .spot-name .era-tag {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    background: var(--parchment-dark);
+    color: var(--stone);
+    padding: 2px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+  .spot-stars { color: var(--vermillion); font-size: 14px; margin-bottom: 10px; }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0 14px;
+  }
+  .tag {
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  .tag.textbook { background: #fef3cd; color: #856404; }
+  .tag.focus { background: #d4edda; color: #155724; }
+  .tag.think { background: #e8daef; color: #6c3483; }
+
+  .must-see { margin: 14px 0; }
+  .must-see h4 {
+    font-size: 13px;
+    color: var(--vermillion);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .must-see ul {
+    list-style: none;
+    padding: 0;
+  }
+  .must-see li {
+    padding: 4px 0 4px 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .must-see li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 10px;
+    top: 7px;
+  }
+
+  .think-box {
+    background: linear-gradient(135deg, #f8f0ff 0%, #f0e8ff 100%);
+    border-left: 3px solid #9b59b6;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin-top: 14px;
+  }
+  .think-box .question {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c3483;
+    margin-bottom: 6px;
+  }
+  .think-box .answer {
+    font-size: 13px;
+    color: #5a3e6b;
+    line-height: 1.7;
+  }
+
+  .context-box {
+    background: #f0f7ff;
+    border-left: 3px solid var(--indigo-light);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin-top: 14px;
+    font-size: 13px;
+    color: var(--indigo);
+    line-height: 1.7;
+  }
+
+  /* ===== TABLE ===== */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 13px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e8ddd0;
+  }
+  .data-table thead th {
+    background: var(--ink);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .data-table tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0e8d8;
+    vertical-align: top;
+  }
+  .data-table tbody tr:nth-child(even) { background: var(--parchment); }
+  .data-table tbody tr:last-child td { border-bottom: none; }
+  .data-table .highlight-row { background: #fef3cd !important; font-weight: 600; }
+
+  /* ===== EVOLUTION TABLE ===== */
+  .evo-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 16px 0;
+    font-size: 13px;
+    border: 1px solid #e8ddd0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .evo-table thead th {
+    background: linear-gradient(135deg, var(--vermillion), #9c2d22);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .evo-table tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0e8d8;
+    vertical-align: top;
+  }
+  .evo-table tbody tr:nth-child(1) { background: #fef9f0; }
+  .evo-table tbody tr:nth-child(2) { background: #f0f7ff; }
+  .evo-table tbody tr:nth-child(3) { background: #f0fff4; }
+  .evo-arrow { text-align: center; font-size: 18px; color: var(--gold); padding: 6px 0; }
+
+  /* ===== TASK & SUMMARY SECTION ===== */
+  .summary-section {
+    margin: 36px auto;
+    max-width: 820px;
+    padding: 0 20px;
+  }
+  .summary-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px var(--shadow);
+    margin-bottom: 24px;
+  }
+  .summary-card h3 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.3em;
+    color: var(--ink);
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--gold);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .task-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .task-item {
+    border: 1px solid #e8ddd0;
+    border-radius: 10px;
+    padding: 16px;
+    background: var(--parchment);
+  }
+  .task-item .task-spot {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--vermillion);
+    margin-bottom: 6px;
+  }
+  .task-item .task-q {
+    font-size: 13px;
+    color: var(--ink-light);
+    margin-bottom: 4px;
+  }
+  .task-item .task-obs {
+    font-size: 12px;
+    color: var(--stone);
+  }
+
+  .top3-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .top3-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--parchment);
+    border-radius: 12px;
+    padding: 16px 20px;
+    border: 1px solid #e8ddd0;
+  }
+  .top3-rank {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 28px;
+    font-weight: 900;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .top3-rank.r1 { background: linear-gradient(135deg, #ffd700, #ffb700); color: #7a5800; }
+  .top3-rank.r2 { background: linear-gradient(135deg, #c0c0c0, #a0a0a0); color: #444; }
+  .top3-rank.r3 { background: linear-gradient(135deg, #cd7f32, #b06828); color: #fff; }
+  .top3-info { flex-grow: 1; }
+  .top3-info .name { font-weight: 700; font-size: 16px; }
+  .top3-info .detail { font-size: 13px; color: var(--stone); }
+
+  .deep-questions {
+    counter-reset: q;
+  }
+  .deep-q {
+    padding: 14px 0;
+    border-bottom: 1px solid #f0e8d8;
+    counter-increment: q;
+  }
+  .deep-q:last-child { border-bottom: none; }
+  .deep-q .q-text {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 6px;
+    display: flex;
+    gap: 10px;
+  }
+  .deep-q .q-text::before {
+    content: counter(q);
+    background: var(--vermillion);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  .deep-q .q-answer {
+    font-size: 13px;
+    color: var(--ink-light);
+    padding-left: 32px;
+    line-height: 1.7;
+  }
+
+  /* ===== PODCAST SECTION ===== */
+  .podcast-section {
+    max-width: 820px;
+    margin: 36px auto;
+    padding: 0 20px;
+  }
+  .podcast-card {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 16px;
+    padding: 32px 28px;
+    color: #fff;
+    box-shadow: 0 8px 30px rgba(15,52,96,0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  .podcast-card::before {
+    content: '';
+    position: absolute;
+    top: -50%; right: -50%;
+    width: 100%; height: 100%;
+    background: radial-gradient(circle, rgba(200,164,92,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .podcast-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+  .podcast-header h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  .podcast-subtitle {
+    font-size: 14px;
+    opacity: 0.75;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .podcast-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+  .podcast-item {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 20px 22px;
+    transition: all 0.2s ease;
+  }
+  .podcast-item:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(200,164,92,0.3);
+    transform: translateY(-2px);
+  }
+  .podcast-item-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .podcast-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--vermillion) 0%, #e85644 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(194,58,43,0.3);
+  }
+  .podcast-item-title {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.05em;
+    font-weight: 600;
+  }
+  .podcast-item-meta {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 2px;
+  }
+  .podcast-item-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.85;
+    margin-bottom: 14px;
+  }
+  .podcast-item-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .podcast-tag {
+    background: rgba(200,164,92,0.15);
+    border: 1px solid rgba(200,164,92,0.25);
+    color: var(--gold-light);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  .podcast-listen-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--vermillion) 0%, #e85644 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 14px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(194,58,43,0.25);
+  }
+  .podcast-listen-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(194,58,43,0.35);
+  }
+  @media (max-width: 640px) {
+    .podcast-section { padding: 0 12px; margin: 24px auto; }
+    .podcast-card { padding: 24px 18px; }
+    .podcast-item { padding: 16px; }
+    .podcast-icon { width: 38px; height: 38px; font-size: 17px; }
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    max-width: 820px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--stone);
+    line-height: 2;
+  }
+  .footer .divider-line {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 16px;
+    border-radius: 1px;
+  }
+
+  /* ===== SECTION CONNECTOR ===== */
+  .connector {
+    text-align: center;
+    padding: 10px 0;
+    color: var(--gold);
+    font-size: 20px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+  }
+
+  /* ===== ROAD TRIP ===== */
+  .road-trip {
+    background: linear-gradient(135deg, #f5efe6 0%, #ebe3d6 100%);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    border: 1px dashed var(--stone);
+  }
+  .road-trip h4 {
+    font-size: 14px;
+    color: var(--ink);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .road-trip p { font-size: 13px; color: var(--ink-light); line-height: 1.8; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 1.6em; }
+    .hero .meta-row { flex-direction: column; align-items: center; gap: 10px; }
+    .day-body { padding: 20px 16px; }
+    .spot-card { padding: 18px; }
+    .task-grid { grid-template-columns: 1fr; }
+    .concept-section { margin: 20px 12px; padding: 24px 18px; }
+    .day-section { margin: 24px 12px; }
+    .summary-section { padding: 0 12px; }
+  }
+
+  /* ===== OVERVIEW ===== */
+  .overview-section {
+    margin: 30px auto;
+    max-width: 820px;
+    padding: 0 20px;
+  }
+  .overview-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 30px;
+    box-shadow: 0 4px 20px var(--shadow);
+    border: 1px solid #e8ddd0;
+  }
+  .overview-card h2 {
+    font-family: 'Noto Serif SC', serif;
+    font-size: 1.4em;
+    color: var(--ink);
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .overview-item {
+    background: var(--parchment);
+    border-radius: 10px;
+    padding: 14px 18px;
+    border-left: 3px solid var(--gold);
+  }
+  .overview-item .label {
+    font-size: 11px;
+    color: var(--stone);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .overview-item .value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .kp-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .kp-tag {
+    font-size: 13px;
+    background: linear-gradient(135deg, #fef3cd, #fde8a0);
+    color: #856404;
+    padding: 5px 14px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid #f0d870;
+  }
+  .route-path {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 14px;
+  }
+  .route-node {
+    background: var(--parchment);
+    border: 1px solid #e0d6c8;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .route-arrow {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  /* ===== HISTORY BG BOX ===== */
+  .history-bg {
+    background: linear-gradient(135deg, #fdf8f0 0%, #f8f0e0 100%);
+    border: 1px solid #e8d8c0;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--ink-light);
+  }
+  .history-bg strong { color: var(--ink); }
+  .history-bg .bg-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--vermillion);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    display: block;
+  }
+
+  .study-points {
+    margin: 12px 0;
+    padding: 14px 18px;
+    background: #f0f7ff;
+    border-radius: 10px;
+    border: 1px solid #d8e8f8;
+  }
+  .study-points h4 {
+    font-size: 12px;
+    color: var(--indigo);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .study-points ul {
+    list-style: none;
+    padding: 0;
+  }
+  .study-points li {
+    padding: 3px 0 3px 18px;
+    position: relative;
+    font-size: 13px;
+    color: var(--indigo);
+    line-height: 1.7;
+  }
+  .study-points li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--indigo-light);
+    font-size: 12px;
+  }
+
+  @media (max-width: 640px) {
+    .overview-grid { grid-template-columns: 1fr; }
+    .route-path { flex-direction: column; align-items: flex-start; }
+    .route-arrow { transform: rotate(90deg); margin-left: 8px; }
+    .overview-section { margin: 20px 12px; }
+  }
+
+  /* ===== PRINT ===== */
+  @media print {
+    body { background: #fff; }
+    .hero { background: var(--ink) !important; padding: 30px 20px; }
+    .day-section { break-inside: avoid; }
+    .spot-card { break-inside: avoid; }
+    .summary-card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">研学打卡指南</div>
+    <h1>晋北 · 锡林郭勒<br>五日历史研学之旅</h1>
+    <p class="subtitle">人教版七年级历史教材同步 · 北魏平城与北方民族大交融</p>
+    <div class="meta-row">
+      <div class="meta-item">
+        <strong>8.25 – 8.29</strong>
+        行程时间
+      </div>
+      <div class="meta-item">
+        <strong>5 天 4 晚</strong>
+        大同 → 锡林郭勒 → 大同
+      </div>
+      <div class="meta-item">
+        <strong>11 个景点</strong>
+        跨 7 个历史时期
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== OVERVIEW ===== -->
+<div class="overview-section">
+  <div class="overview-card">
+    <h2>📚 研学总览</h2>
+    <div class="overview-grid">
+      <div class="overview-item">
+        <div class="label">研学主题</div>
+        <div class="value">北魏平城与北方民族大交融</div>
+      </div>
+      <div class="overview-item">
+        <div class="label">对应教材</div>
+        <div class="value">人教版七上·第四单元<br>《北魏政治和北方民族大交融》</div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--stone);margin-bottom:10px;">核心知识点</p>
+    <div class="kp-list">
+      <span class="kp-tag">北魏统一北方（439年）</span>
+      <span class="kp-tag">孝文帝改革与汉化政策</span>
+      <span class="kp-tag">北方民族大交融的历史意义</span>
+    </div>
+    <p style="font-size:13px;color:var(--stone);margin:16px 0 8px;">研学路线</p>
+    <div class="route-path">
+      <span class="route-node">大同古城</span>
+      <span class="route-arrow">→</span>
+      <span class="route-node">悬空寺/云冈石窟</span>
+      <span class="route-arrow">→</span>
+      <span class="route-node">锡林郭勒草原</span>
+      <span class="route-arrow">→</span>
+      <span class="route-node">应县木塔/净土寺</span>
+    </div>
+
+    <!-- 行程速览表 -->
+    <p style="font-size:13px;color:var(--stone);margin:20px 0 10px;">行程速览</p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>日期</th>
+          <th>地点</th>
+          <th>核心景点</th>
+          <th>研学重点</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Day1</td>
+          <td>大同古城</td>
+          <td>华严寺、善化寺、九龙壁</td>
+          <td>辽金建筑艺术与汉文化继承</td>
+        </tr>
+        <tr>
+          <td>Day2</td>
+          <td>浑源/大同</td>
+          <td>悬空寺、云冈石窟</td>
+          <td>北魏佛教艺术与三教合一</td>
+        </tr>
+        <tr>
+          <td>Day3</td>
+          <td>锡林浩特</td>
+          <td>平顶山火山群</td>
+          <td>自然地理与草原文化</td>
+        </tr>
+        <tr>
+          <td>Day4</td>
+          <td>锡林郭勒</td>
+          <td>锡林九曲、白音锡勒</td>
+          <td>草原生态与游牧文明</td>
+        </tr>
+        <tr>
+          <td>Day5</td>
+          <td>应县</td>
+          <td>应县木塔、净土寺</td>
+          <td>辽金木构建筑巅峰</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== CONCEPT MAP ===== -->
+<div class="concept-section">
+  <h2>📖 出发前先看懂这条时间线</h2>
+  <p style="font-size:14px;opacity:0.8;margin-bottom:16px;">
+    对应教材：七上·第四单元「三国两晋南北朝时期：政权分立与民族交融」
+  </p>
+  <div class="timeline-flow">
+    <div class="timeline-node">
+      <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+      <div class="timeline-text"><span class="year">398年</span> <strong>拓跋珪迁都平城</strong>（大同）— 北魏定都于此近百年</div>
+    </div>
+    <div class="timeline-node">
+      <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+      <div class="timeline-text"><span class="year">439年</span> <strong>北魏统一北方</strong> — 结束十六国混战，北方进入稳定期</div>
+    </div>
+    <div class="timeline-node">
+      <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+      <div class="timeline-text"><span class="year">460年</span> <strong>云冈石窟始凿</strong> — 跨越北魏多位皇帝，持续60余年</div>
+    </div>
+    <div class="timeline-node">
+      <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+      <div class="timeline-text"><span class="year">494年</span> <strong>孝文帝迁都洛阳</strong> — 全面推行汉化，云冈风格随之转变</div>
+    </div>
+    <div class="timeline-node">
+      <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+      <div class="timeline-text">云冈早期<strong>（胡风）</strong>→ 中晚期<strong>（汉化）</strong>→ 龙门石窟<strong>（全面汉化）</strong></div>
+    </div>
+    <div class="timeline-node">
+      <div class="timeline-dot-col"><div class="timeline-dot"></div><div class="timeline-line"></div></div>
+      <div class="timeline-text">契丹<strong>（辽）</strong>、女真<strong>（金）</strong>、蒙古<strong>（元）</strong>→ 持续千年的民族交融</div>
+    </div>
+  </div>
+  <div class="quote-box">
+    "北魏皇室崇信佛教，北魏统治时期，我国北方地区佛教广为传播，留下了大量的佛教寺院和佛教石窟。"
+    <span class="quote-source">— 人教版七上·第19课《北魏政治和北方民族大交融》</span>
+  </div>
+</div>
+
+<div class="connector">◆ ◆ ◆</div>
+
+<!-- ===== DAY 1 ===== -->
+<div class="day-section day1">
+  <div class="day-header">
+    <div class="day-label">DAY 1 ｜ 8月25日 周一</div>
+    <h2>北魏都城平城的历史印记</h2>
+    <div class="day-theme">主题：辽金如何继承汉文化？少数民族政权怎样"汉化"？</div>
+  </div>
+  <div class="day-body">
+    <p style="font-size:13px;color:var(--stone);margin-bottom:18px;">下午：华严寺 → 善化寺 → 九龙壁 ｜ 傍晚：古城墙骑行看日落</p>
+
+    <!-- 华严寺 -->
+    <div class="spot-card">
+      <div class="spot-name">华严寺 <span class="era-tag">辽重熙七年 · 1038年</span></div>
+      <div class="spot-stars">⭐⭐⭐</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七下·第7课</span>
+        <span class="tag focus">辽金建筑艺术</span>
+        <span class="tag focus">佛教中国化</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        华严寺始建于辽代，是辽代皇家寺院。辽代统治者崇信佛教，华严寺体现了辽代对唐代建筑风格的继承。薄伽教藏殿是寺内最古老的建筑，保存着辽代泥塑31尊，其中<strong>合掌露齿菩萨</strong>被誉为"东方维纳斯"。
+        <br><br>
+        佛教自汉代传入中国后，经历了漫长的本土化过程。辽代佛教兴盛，寺院建筑既保留了唐代雄浑大气的风格，又融入了契丹民族的审美特色。辽代实行<strong>"因俗而治"</strong>的政策——对契丹人用本族制度管理，对汉人沿用汉制，这种双轨制也体现在宗教建筑的多元风格中。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>观察薄伽教藏殿的建筑结构，对比唐代建筑特点</li>
+          <li>欣赏合掌露齿菩萨造像，思考佛教艺术的中国化表达</li>
+          <li>了解辽代"因俗而治"的政策如何体现在宗教建筑中</li>
+        </ul>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li><strong>薄伽教藏殿</strong>：辽代原构，殿内<strong>合掌露齿菩萨</strong>被誉为"东方维纳斯"— 辽代泥塑巅峰之作</li>
+          <li>辽代泥塑31尊，保存完好，是全国现存最精美的辽代彩塑</li>
+          <li><strong>大雄宝殿</strong>：金代重建，中国现存最大的辽金佛殿</li>
+        </ul>
+      </div>
+      <div class="think-box">
+        <div class="question">💭 辽代为何继承唐代建筑风格？</div>
+        <div class="answer">辽代统治者主动吸收中原文化，以"正统"自居。唐风建筑体现了契丹族对汉文化的认同和继承——这正是教材"北方民族大交融"的实物证据。</div>
+      </div>
+    </div>
+
+    <!-- 善化寺 -->
+    <div class="spot-card">
+      <div class="spot-name">善化寺 <span class="era-tag">唐开元始建 · 辽金重建</span></div>
+      <div class="spot-stars">⭐⭐⭐</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七下·第7课</span>
+        <span class="tag focus">少数民族政权对汉文化的继承</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        善化寺始建于唐开元年间，辽金时期重建。它是<strong>中国现存最完整的辽金寺院建筑群</strong>，集中展示了辽金两代对中原建筑传统的继承与发展。辽代（916-1125年）由契丹族建立，在建筑上大量吸收唐代风格；金代（1115-1234年）由女真族建立，灭辽后又继承辽和北宋的文化传统。善化寺"一寺跨两朝"的独特格局，正是这种连续不断的民族文化融合的物质见证。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>对比辽代大雄宝殿与金代天王殿的建筑风格异同</li>
+          <li>观察斗拱形制——比唐代更硕大雄浑，体现北方民族的粗犷审美</li>
+          <li>理解"四座辽金建筑集于一寺"为何在全国极为罕见</li>
+        </ul>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li><strong>四座辽金建筑集于一寺</strong>：辽代大雄宝殿 + 金代天王殿/三圣殿/普贤阁</li>
+          <li>"一寺多朝"的建筑叠加极为罕见 — 相当于把辽金建筑史浓缩在一个院子里</li>
+        </ul>
+      </div>
+      <div class="think-box">
+        <div class="question">💭 辽金建筑如何体现"汉化"与民族融合？</div>
+        <div class="answer">观察斗拱形制、屋顶样式、平面布局 — 这些都是中原传统建筑语言。但辽金建筑斗拱更硕大、气势更雄浑，体现了北方民族的粗犷审美与汉文化的融合。</div>
+      </div>
+    </div>
+
+    <!-- 九龙壁 -->
+    <div class="spot-card">
+      <div class="spot-name">九龙壁 <span class="era-tag">明洪武二十五年 · 1392年</span></div>
+      <div class="spot-stars">⭐⭐</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七下·第14课</span>
+        <span class="tag focus">明代藩王制度</span>
+        <span class="tag focus">琉璃工艺</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        九龙壁建于明洪武二十五年（1392年），是<strong>朱元璋第十三子朱桂</strong>封代王于大同时所建的代王府照壁。明代实行分封诸子镇守边疆的政策，大同正对蒙古草原，是"九边重镇"之首，代王肩负着守卫北疆的重任。九龙壁长45.5米、高8米，是中国现存最早最大的琉璃九龙壁，比北京故宫九龙壁早350年，面积大4倍。
+        <br><br>
+        九条龙颜色各异——正中为黄色（帝王色），两侧蓝、白、紫、绿，翻腾于海浪云雾之间，琉璃烧制工艺精湛，色彩历经600余年依然鲜艳。这座九龙壁是明代藩王制度与边疆防御体系的实物证据。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>观察九条龙的不同形态与颜色，理解"龙"与皇权的象征关系</li>
+          <li>了解明代"九边重镇"的防御体系——大同为何位居首位</li>
+          <li>对比北京故宫九龙壁和北海九龙壁，思考等级差异</li>
+        </ul>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li><strong>中国现存最早最大的九龙壁</strong>：长45.5米、高8米，比北京故宫九龙壁早350年，面积大4倍</li>
+          <li>九条龙颜色各异：正中黄色（帝王色），两侧蓝、白、紫、绿</li>
+        </ul>
+      </div>
+      <div class="context-box">
+        📜 <strong>历史背景：</strong>朱元璋第十三子朱桂封代王于大同 — 大同正对蒙古草原，是"九边重镇"之首。九龙壁就是代王府的照壁，藩王守边的实物证据。
+      </div>
+    </div>
+
+    <!-- 古城墙 -->
+    <div class="spot-card">
+      <div class="spot-name">大同古城墙 <span class="era-tag">明 · 洪武年间</span></div>
+      <div class="spot-stars">⭐⭐⭐</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七下·第16课</span>
+        <span class="tag focus">明长城防御体系</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        大同古城墙始建于明洪武五年（1372年），在辽金元代旧城基础上增筑而成。城墙高14米，周长7.24公里，设有敌楼54座、角楼4座，护城河环绕，构成完整的军事防御体系。
+        <br><br>
+        大同在明代具有极其重要的战略地位。明代为防御北方蒙古贵族南扰，先后18次修筑长城。大同作为"九边重镇"之首，正面对蒙古高原方向，是长城防线的核心节点。明代九边重镇中，大同兵力最盛，驻军十余万。城墙骑行时朝北方望——那就是蒙古草原方向，明长城就是为了挡住从这里南下的骑兵。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>骑行环城一周，感受城墙的规模与军事防御布局</li>
+          <li>观察敌楼、角楼的位置设计——理解交叉火力防御原理</li>
+          <li>结合教材第16课，理解明长城的整体防御体系</li>
+        </ul>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li>城墙高14米，周长7.24公里，敌楼、角楼、护城河构成完整军事防御体系</li>
+          <li>骑行时朝北方望 — 那就是蒙古草原方向，明长城就是为了挡住从这里南下的骑兵</li>
+        </ul>
+      </div>
+      <div class="think-box">
+        <div class="question">💭 大同为什么在明代如此重要？</div>
+        <div class="answer">大同地处农牧交错带，是明长城防线的核心节点。明代九边重镇中，大同兵力最盛。教材原文："为防御北方蒙古贵族南扰，明朝先后18次修筑长城。"</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DAY 2 ===== -->
+<div class="day-section day2">
+  <div class="day-header">
+    <div class="day-label">DAY 2 ｜ 8月26日 周二</div>
+    <h2>北魏佛教艺术的巅峰</h2>
+    <div class="day-theme">主题：佛教如何在中国本土化？孝文帝改革前后有什么变化？</div>
+  </div>
+  <div class="day-body">
+    <p style="font-size:13px;color:var(--stone);margin-bottom:18px;">上午：悬空寺 ｜ 下午：云冈石窟（12:30-15:00） ｜ 傍晚：可选大同博物馆</p>
+
+    <!-- 悬空寺 -->
+    <div class="spot-card">
+      <div class="spot-name">悬空寺 <span class="era-tag">北魏太和十五年 · 491年</span></div>
+      <div class="spot-stars">⭐⭐⭐</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七上·第20课</span>
+        <span class="tag focus">三教合一</span>
+        <span class="tag focus">古代建筑力学</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        悬空寺始建于北魏太和十五年（491年），距今已有1500余年历史。整座寺庙悬于恒山翠峰岭绝壁之上，距地面高约60米，全靠<strong>榫卯结构</strong>嵌入悬崖，半插飞梁为基，巧借岩石暗托。这种建筑方式体现了北魏时期高超的建筑力学水平。
+        <br><br>
+        魏晋南北朝时期，儒释道三教并行发展、相互影响。统治者既信佛教也尊儒术，民间信仰更是多元融合。悬空寺内的三教殿同时供奉释迦牟尼、老子、孔子，是全国罕见的佛道儒三教合一实物。这种独特的宗教包容精神，正是这一时代特征的缩影。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>观察悬空寺的建筑支撑结构——横梁如何嵌入悬崖</li>
+          <li>在三教殿找出佛、道、儒三教元素，思考为何能合一</li>
+          <li>了解北魏佛教兴盛的社会背景与政治功能</li>
+        </ul>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li><strong>三教殿</strong>：同时供奉释迦牟尼、老子、孔子 — 全国罕见的佛道儒三教合一</li>
+          <li>整座寺庙悬于绝壁，全靠<strong>榫卯结构</strong>嵌入悬崖，1500年不倒</li>
+          <li>建筑奇迹：半插飞梁为基，巧借岩石暗托</li>
+        </ul>
+      </div>
+      <div class="think-box">
+        <div class="question">💭 北魏为何会出现三教合一现象？</div>
+        <div class="answer">魏晋南北朝时期，儒释道三教并行发展、相互影响。统治者既信佛教也尊儒术，民间信仰更是多元融合。教材提及"南北朝时期佛寺3万多所，僧尼近200万人"。悬空寺的三教合一正是这一时代特征的缩影。</div>
+      </div>
+    </div>
+
+    <!-- 云冈石窟 -->
+    <div class="spot-card top-pick">
+      <div class="spot-name">云冈石窟 <span class="era-tag">北魏和平初年 · 460年始凿</span></div>
+      <div class="spot-stars">⭐⭐⭐⭐⭐ 全行程教材关联最强！</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七上·第19-20课</span>
+        <span class="tag focus">佛教艺术中国化的起点</span>
+        <span class="tag focus">丝绸之路文化交流</span>
+        <span class="tag focus">平城时代</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        云冈石窟开凿于北魏和平初年（460年），由著名僧人昙曜主持，在平城（大同）西郊武州山上大规模凿窟造像。整个工程跨越北魏多位皇帝，持续约60余年，现存主要洞窟45个，大小造像5.1万余尊。
+        <br><br>
+        云冈石窟是<strong>佛教艺术中国化的起点</strong>。北魏皇室崇信佛教，将佛教作为国家意识形态的重要组成部分。石窟造像早期（昙曜五窟）深受西域犍陀罗艺术影响，佛像高鼻深目、偏袒右肩，带有浓郁的"胡风"；中期以后，随着孝文帝推行汉化改革，造像风格逐渐转变为"褒衣博带、秀骨清像"的汉式面貌。这种风格演变，是北魏从鲜卑文化向汉文化转型的实物见证。
+        <br><br>
+        云冈石窟也是<strong>丝绸之路文化交流</strong>的重要证据——窟中可见印度、中亚乃至希腊化的艺术元素，证明了平城作为北魏都城时的国际化程度。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>重点参观昙曜五窟（16-20窟），观察早期"胡风"造像特征</li>
+          <li>对比第5-6窟的"汉化"风格，理解孝文帝改革对艺术的影响</li>
+          <li>寻找石窟中的丝路元素——西域纹样、外来乐器、异国装饰</li>
+          <li>思考：云冈石窟如何体现"皇帝即佛"的政教合一理念</li>
+        </ul>
+      </div>
+      <div style="background:#fff8e8;border-radius:10px;padding:14px 18px;margin:12px 0;font-size:14px;line-height:1.8;border:1px solid #f0e0b0;">
+        <strong>📖 教材原文：</strong><br>
+        "山西大同的云冈石窟、河南洛阳的龙门石窟……这些造像继承了秦汉以来我国雕塑艺术的优良传统，也吸收了外来佛教造型艺术的特点，堪称宏伟精巧的雕刻艺术品。"
+        <div style="font-size:12px;color:var(--stone);margin-top:4px;">— 七上·第20课</div>
+      </div>
+      <div class="must-see">
+        <h4>必看洞窟</h4>
+        <ul>
+          <li><strong>16-20窟（昙曜五窟）</strong>：5尊巨佛象征北魏5位皇帝 — "皇帝即佛"，皇权与佛教结合的极致表达</li>
+          <li><strong>第20窟（露天大佛）</strong>：高13.7米释迦牟尼坐像，云冈标志，七上第20课核心插图</li>
+          <li><strong>第5-6窟</strong>：第6窟"云冈最美洞窟"，佛教故事雕刻最丰富</li>
+          <li><strong>第12窟（音乐窟）</strong>：大量乐伎雕刻，展示北魏宫廷音乐，民族交融的实物证据</li>
+        </ul>
+      </div>
+
+      <p style="font-size:14px;font-weight:600;color:var(--vermillion);margin:16px 0 10px;">🔍 核心研学任务 — 风格演变观察</p>
+      <table class="evo-table">
+        <thead>
+          <tr>
+            <th>时期</th>
+            <th>风格特征</th>
+            <th>代表洞窟</th>
+            <th>反映的历史</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>早期</strong></td>
+            <td>高鼻深目、偏袒右肩、胡风浓郁</td>
+            <td>昙曜五窟（16-20）</td>
+            <td>北魏早期鲜卑文化为主</td>
+          </tr>
+          <tr>
+            <td><strong>中期</strong></td>
+            <td>褒衣博带、秀骨清像、汉化明显</td>
+            <td>5-6窟</td>
+            <td>孝文帝汉化改革影响</td>
+          </tr>
+          <tr>
+            <td><strong>晚期</strong></td>
+            <td>面目清秀、完全汉化</td>
+            <td>后期小窟</td>
+            <td>迁都洛阳后</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="think-box">
+        <div class="question">💭 核心问题：云冈石窟如何体现"佛教艺术中国化"？</div>
+        <div class="answer">
+          <strong>观察线索：</strong><br>
+          · 佛像面容：从"胡貌"→"汉相"<br>
+          · 佛像服饰：从"偏袒右肩"→"褒衣博带"<br>
+          · 窟内装饰：从西域风格→中国传统建筑样式<br>
+          · 这种变化的背后，正是孝文帝推行汉化改革的历史大潮
+        </div>
+      </div>
+      <div class="context-box" style="margin-top:14px;">
+        📝 <strong>经典考题：</strong>云冈石窟与龙门石窟佛像有什么区别？反映了什么问题？<br>
+        → 云冈佛像反映鲜卑族风貌（胡人特征），龙门佛像穿汉服（孝文帝改革后）。反映了<strong>民族文化的交融</strong>。
+      </div>
+    </div>
+
+    <!-- 大同博物馆 -->
+    <div class="spot-card">
+      <div class="spot-name">大同博物馆 <span class="era-tag">可选 · 需预约</span></div>
+      <div class="spot-stars">⭐⭐</div>
+      <div class="tag-row">
+        <span class="tag focus">综合</span>
+        <span class="tag focus">北魏/辽金</span>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li><strong>司马金龙墓出土文物</strong>：北魏漆画屏风，国宝级 — 展示北魏贵族生活</li>
+          <li><strong>北魏陶俑</strong>：甲胄装备，展示北魏军事力量</li>
+          <li><strong>辽金瓷器</strong>：契丹民族特色器物</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DAY 3 ===== -->
+<div class="day-section day3">
+  <div class="day-header">
+    <div class="day-label">DAY 3 ｜ 8月27日 周三</div>
+    <h2>自驾穿越农牧交错带</h2>
+    <div class="day-theme">主题：农耕文明 vs 游牧文明的千年博弈</div>
+  </div>
+  <div class="day-body">
+    <div class="road-trip">
+      <h4>🚗 自驾路线 · 大同 → 锡林浩特（约500km，6小时）</h4>
+      <p>
+        这条路线正是中国历史上持续千年的<strong>农牧分界线</strong> — 从农耕文明的边塞城市大同，一路向北进入游牧文明的蒙古草原。<br><br>
+        📖 七下·第7课：辽与北宋的边界就在这一带<br>
+        📖 七下·第16课：明长城的北段延伸方向
+      </p>
+    </div>
+
+    <div class="spot-card">
+      <div class="spot-name">平顶山火山群 <span class="era-tag">地质科普</span></div>
+      <div class="tag-row">
+        <span class="tag focus">地质地貌</span>
+      </div>
+      <div class="must-see">
+        <h4>看点</h4>
+        <ul>
+          <li>2700万年前火山喷发形成的玄武岩地貌</li>
+          <li>日落时分拍摄最佳 — 平顶山体在夕阳下格外壮观</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DAY 4 ===== -->
+<div class="day-section day4">
+  <div class="day-header">
+    <div class="day-label">DAY 4 ｜ 8月28日 周四</div>
+    <h2>草原上的帝国记忆</h2>
+    <div class="day-theme">主题：成吉思汗与蒙古帝国的崛起</div>
+  </div>
+  <div class="day-body">
+    <p style="font-size:13px;color:var(--stone);margin-bottom:18px;">上午：锡林九曲 → 白音锡勒草原 ｜ 午餐后返程大同（约7小时车程）</p>
+
+    <div class="spot-card">
+      <div class="spot-name">锡林九曲 · 白音锡勒草原</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七下·第10-11课</span>
+        <span class="tag focus">蒙古帝国</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        锡林郭勒草原是蒙古族发祥地之一，距此不远的正蓝旗就是<strong>元上都</strong>所在地。1206年，成吉思汗统一蒙古各部，建立大蒙古国；1271年，忽必烈建立元朝，定都大都（北京），并以元上都为陪都。锡林郭勒草原见证了蒙古帝国从崛起到统一全国的壮阔历程。
+        <br><br>
+        站在草原上才能真正理解游牧文明的底层逻辑：辽阔草原 → 畜牧业为生 → 骑马射箭的民族传统 → 强大的军事机动性 → 成吉思汗统一各部后向外扩张。这里的每一寸草场，都是历史教科书里"游牧帝国"最真实的注解。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>感受草原的辽阔——理解为什么这里能诞生游牧帝国</li>
+          <li>了解锡林郭勒与元上都的历史渊源</li>
+          <li>对比Day1-2的农耕文明（城市、寺庙、城墙）与Day3-4的游牧文明（草原、牧场、迁徙）</li>
+        </ul>
+      </div>
+      <div style="background:#f0f7f0;border-radius:10px;padding:14px 18px;margin:12px 0;font-size:14px;line-height:1.8;border:1px solid #d0e8d0;">
+        <strong>📖 教材链接：</strong><br>
+        七下·第10课："成吉思汗统一蒙古（1206年）"<br>
+        七下·第11课：忽必烈建立元朝（1271年）— 距此不远的正蓝旗就是元上都
+      </div>
+      <div class="think-box">
+        <div class="question">💭 为什么蒙古草原能诞生强大的游牧帝国？</div>
+        <div class="answer">辽阔草原 → 畜牧业为生 → 骑马射箭的民族传统 → 强大的军事机动性 → 成吉思汗统一各部后向外扩张。站在草原上，才能真正理解游牧文明的底层逻辑。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DAY 5 ===== -->
+<div class="day-section day5">
+  <div class="day-header">
+    <div class="day-label">DAY 5 ｜ 8月29日 周五</div>
+    <h2>辽金建筑的绝唱</h2>
+    <div class="day-theme">主题：少数民族政权如何继承中原文化？</div>
+  </div>
+  <div class="day-body">
+    <p style="font-size:13px;color:var(--stone);margin-bottom:18px;">上午：应县木塔 + 净土寺 ｜ 15:00 出发前往大同南站 ｜ 17:00 返程</p>
+
+    <!-- 应县木塔 -->
+    <div class="spot-card top-pick">
+      <div class="spot-name">应县木塔 <span class="era-tag">辽清宁二年 · 1056年</span></div>
+      <div class="spot-stars">⭐⭐⭐⭐⭐ 世界建筑奇迹</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七下·第7课</span>
+        <span class="tag focus">中国古代木结构建筑巅峰</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        应县木塔（佛宫寺释迦塔）建于辽清宁二年（1056年），由辽道宗耶律洪基敕建。辽代继承了唐代建筑技术的精华，加上契丹民族对木材的丰富使用经验，创造了这座<strong>世界现存最高、最古老的纯木结构建筑</strong>。
+        <br><br>
+        全塔高67.31米（约20层楼），外观五层六檐，实际九层（每层之间有暗层）。全塔<strong>不用一根铁钉</strong>，完全依靠54种、480多个斗拱咬合连接，被称为"斗拱博物馆"。历经近千年，遭受多次地震、战火、雷击，塔身虽已有明显倾斜（类似比萨斜塔），但至今屹立不倒，是中国古代建筑智慧的极致体现。
+        <br><br>
+        辽代建筑以雄浑大气著称，继承了唐代"斗拱硕大、出檐深远"的特点。应县木塔代表了中国木构建筑的最高成就，也是辽代"汉化"过程中对中原建筑技术全面吸收与超越的实证。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>绕塔一圈，观察并尝试数清不同种类的斗拱</li>
+          <li>理解"外观五层、实际九层"的结构设计原理</li>
+          <li>对比应县木塔与欧洲比萨斜塔——同为"斜塔"，成因有何不同</li>
+          <li>思考：辽代为何能建造如此精妙的木构建筑？</li>
+        </ul>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li><strong>世界现存最高最古的纯木结构建筑</strong>：高67.31米（约20层楼）</li>
+          <li><strong>全塔不用一根铁钉</strong>：54种、480多个斗拱咬合 — 被称为"斗拱博物馆"</li>
+          <li>外观五层六檐，实际九层（每层之间有暗层）</li>
+          <li>一层供奉11米高释迦牟尼坐像</li>
+          <li><strong>倾斜现状</strong>：塔身已有明显倾斜（类似比萨斜塔），历经近千年地震、战火、雷击不倒</li>
+        </ul>
+      </div>
+      <div class="think-box">
+        <div class="question">💭 辽代为何能建造如此精妙的木构建筑？</div>
+        <div class="answer">辽代继承了唐代建筑技术的精华，加上契丹民族对木材的丰富使用经验。辽代建筑以雄浑大气著称，应县木塔是辽代建筑艺术的最高峰。</div>
+      </div>
+      <div class="context-box" style="margin-top:14px;">
+        💬 <strong>梁思成评价：</strong>"不见此塔，不知木构的可能性到了什么程度。"
+      </div>
+    </div>
+
+    <!-- 净土寺 -->
+    <div class="spot-card">
+      <div class="spot-name">净土寺 <span class="era-tag">金天会二年 · 1124年</span></div>
+      <div class="spot-stars">⭐⭐⭐</div>
+      <div class="tag-row">
+        <span class="tag textbook">📖 七下·第7-8课</span>
+        <span class="tag focus">金代小木作工艺巅峰</span>
+      </div>
+      <div class="history-bg">
+        <span class="bg-label">【历史背景】</span>
+        净土寺始建于金天会二年（1124年），正值金朝建立初期。女真族建立金朝后，灭辽攻宋，全面继承辽和北宋的文化传统。在建筑、文学、制度等方面，金朝都积极学习中原文明。净土寺大雄宝殿的九宫藻井——"天宫楼阁"，是金代小木作工艺的巅峰之作，层层叠涩、精雕细琢，完美展示了女真族对中原建筑技术的吸收与再创造。
+        <br><br>
+        建筑学家梁思成曾多次考察净土寺，对其藻井赞叹不已，称之为"超类绝伦"。这座小寺因藻井的精妙程度，在中国建筑史上占有重要地位。
+      </div>
+      <div class="study-points">
+        <h4>研学要点</h4>
+        <ul>
+          <li>仰观九宫藻井——感受"天宫楼阁"层层叠涩的小木作精妙</li>
+          <li>对比应县木塔的"大木作"与净土寺的"小木作"，理解两者的不同</li>
+          <li>思考：女真族建立金朝后，如何对待中原文化？</li>
+        </ul>
+      </div>
+      <div class="must-see">
+        <h4>必看亮点</h4>
+        <ul>
+          <li><strong>大雄宝殿九宫藻井</strong>："天宫楼阁" — 层层叠涩的小木作精品</li>
+          <li>梁思成赞其"超类绝伦"</li>
+        </ul>
+      </div>
+      <div class="think-box">
+        <div class="question">💭 女真族建立金朝后，如何对待中原文化？</div>
+        <div class="answer">金朝继承辽和北宋的文化传统，在建筑、文学、制度等方面全面学习中原。净土寺的藻井就是金代吸收中原建筑技术的精品。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="connector">◆ ◆ ◆</div>
+
+<!-- ===== SUMMARY ===== -->
+<div class="summary-section">
+
+  <!-- 研学任务清单 -->
+  <div class="summary-card">
+    <h3>📝 研学任务清单</h3>
+    <div class="task-grid">
+      <div class="task-item">
+        <div class="task-spot">云冈石窟</div>
+        <div class="task-q"><strong>核心问题：</strong>佛教如何在中国本土化？</div>
+        <div class="task-obs"><strong>观察任务：</strong>对比早期/中期造像风格差异（胡貌→汉相）</div>
+      </div>
+      <div class="task-item">
+        <div class="task-spot">华严寺 / 善化寺</div>
+        <div class="task-q"><strong>核心问题：</strong>辽金如何继承汉文化？</div>
+        <div class="task-obs"><strong>观察任务：</strong>找出唐代建筑元素（斗拱、屋顶样式）</div>
+      </div>
+      <div class="task-item">
+        <div class="task-spot">应县木塔</div>
+        <div class="task-q"><strong>核心问题：</strong>古人如何不用铁钉建高楼？</div>
+        <div class="task-obs"><strong>观察任务：</strong>观察54种斗拱结构</div>
+      </div>
+      <div class="task-item">
+        <div class="task-spot">悬空寺</div>
+        <div class="task-q"><strong>核心问题：</strong>三教为何能合一？</div>
+        <div class="task-obs"><strong>观察任务：</strong>找出佛、道、儒三教元素</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP3 -->
+  <div class="summary-card">
+    <h3>🎯 本次行程「必考」TOP 3</h3>
+    <div class="top3-list">
+      <div class="top3-item">
+        <div class="top3-rank r1">1</div>
+        <div class="top3-info">
+          <div class="name">云冈石窟</div>
+          <div class="detail">📖 七上·第20课 ｜ 北魏佛教石窟，胡→汉的风格演变是经典考题</div>
+        </div>
+      </div>
+      <div class="top3-item">
+        <div class="top3-rank r2">2</div>
+        <div class="top3-info">
+          <div class="name">应县木塔</div>
+          <div class="detail">📖 七下·第7课 ｜ 世界最高最古纯木建筑，辽代建筑巅峰</div>
+        </div>
+      </div>
+      <div class="top3-item">
+        <div class="top3-rank r3">3</div>
+        <div class="top3-info">
+          <div class="name">大同古城墙</div>
+          <div class="detail">📖 七下·第16课 ｜ 明长城九边重镇之首，防御蒙古的前线</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 深度思考题 -->
+  <div class="summary-card">
+    <h3>💡 深度研学思考题</h3>
+    <div class="deep-questions">
+      <div class="deep-q">
+        <div class="q-text">云冈石窟的造像风格变化，如何反映北魏的汉化进程？</div>
+        <div class="q-answer">早期胡风（昙曜五窟）→ 中期汉化（5-6窟）→ 晚期完全汉化。佛像面容从"胡貌"变"汉相"，服饰从"偏袒右肩"变"褒衣博带"。</div>
+      </div>
+      <div class="deep-q">
+        <div class="q-text">辽金建筑为何大量继承唐代风格而非宋代？</div>
+        <div class="q-answer">辽/金与北宋并立，认为自己是"正统"；唐风建筑更雄浑大气，符合北方民族的审美偏好。</div>
+      </div>
+      <div class="deep-q">
+        <div class="q-text">悬空寺的"三教合一"体现了怎样的宗教包容精神？</div>
+        <div class="q-answer">魏晋南北朝时期三教并行、相互影响，这种包容性是中华文化的重要特征。</div>
+      </div>
+      <div class="deep-q">
+        <div class="q-text">应县木塔历经千年地震战火不倒，体现了中国古代建筑的哪些智慧？</div>
+        <div class="q-answer">柔性结构（斗拱减震）、榫卯连接（允许微小变形）、多层暗层（增加整体刚度）。</div>
+      </div>
+      <div class="deep-q">
+        <div class="q-text">从平城（大同）到洛阳，北魏为什么一定要迁都？</div>
+        <div class="q-answer">平城偏北，不利于控制中原；迁都洛阳 → 更好推行汉化 → 巩固对北方的统治。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 教材速查表 -->
+  <div class="summary-card">
+    <h3>📊 教材知识点速查表</h3>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>日期</th>
+          <th>景点</th>
+          <th>对应教材</th>
+          <th>时期</th>
+          <th>重要度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Day1</td>
+          <td>华严寺</td>
+          <td>七下·第7课</td>
+          <td>辽</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Day1</td>
+          <td>善化寺</td>
+          <td>七下·第7课</td>
+          <td>辽金</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Day1</td>
+          <td>九龙壁</td>
+          <td>七下·第14课</td>
+          <td>明</td>
+          <td>⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Day1</td>
+          <td>古城墙</td>
+          <td>七下·第16课</td>
+          <td>明</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Day2</td>
+          <td>悬空寺</td>
+          <td>七上·第20课</td>
+          <td>北魏</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Day2</td>
+          <td>云冈石窟 🔥</td>
+          <td>七上·第19-20课</td>
+          <td>北魏</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Day2</td>
+          <td>大同博物馆</td>
+          <td>综合</td>
+          <td>北魏/辽金</td>
+          <td>⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Day3</td>
+          <td>自驾路上</td>
+          <td>七下·第7/16课</td>
+          <td>辽/明</td>
+          <td>联想</td>
+        </tr>
+        <tr>
+          <td>Day4</td>
+          <td>草原</td>
+          <td>七下·第10-11课</td>
+          <td>蒙古/元</td>
+          <td>联想</td>
+        </tr>
+        <tr class="highlight-row">
+          <td>Day5</td>
+          <td>应县木塔 🔥</td>
+          <td>七下·第7课</td>
+          <td>辽</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Day5</td>
+          <td>净土寺</td>
+          <td>七下·第7-8课</td>
+          <td>金</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== PODCAST SECTION ===== -->
+<div class="podcast-section">
+  <div class="podcast-card">
+    <div class="podcast-header">
+      <span style="font-size:1.5em;">🎧</span>
+      <h2>研学播客 · 路上听</h2>
+    </div>
+    <div class="podcast-subtitle">出发前或自驾路上听，边听边学，到了景点更有感觉</div>
+    
+    <div class="podcast-list">
+      <!-- 播客第1期 -->
+      <div class="podcast-item">
+        <div class="podcast-item-header">
+          <div class="podcast-icon">🏔️</div>
+          <div>
+            <div class="podcast-item-title">第1期：云冈石窟——石头上的北魏王朝</div>
+            <div class="podcast-item-meta">双人对话 · 约10分钟 · 七上第19-20课</div>
+          </div>
+        </div>
+        <div class="podcast-item-desc">
+          从昙曜五窟的传奇故事，到佛像从印度脸变成中国脸的三个历史阶段，再到第20窟露天大佛背后的帝国密码。到了云冈石窟，听这期刚刚好。
+        </div>
+        <div class="podcast-item-tags">
+          <span class="podcast-tag">🔥 TOP1必考</span>
+          <span class="podcast-tag">佛教中国化</span>
+          <span class="podcast-tag">民族交融</span>
+          <span class="podcast-tag">Day2 车上听</span>
+        </div>
+        <audio controls preload="none" style="width:100%;margin-top:8px;border-radius:8px;"><source src="audio/01-yungang-grottoes.mp3" type="audio/mpeg">您的浏览器不支持音频播放</audio>
+      </div>
+
+      <!-- 播客第2期 -->
+      <div class="podcast-item">
+        <div class="podcast-item-header">
+          <div class="podcast-icon">🏯</div>
+          <div>
+            <div class="podcast-item-title">第2期：千年建筑奇迹——悬空寺与应县木塔</div>
+            <div class="podcast-item-meta">双人对话 · 约10分钟 · 七上第20课 + 七下第7课</div>
+          </div>
+        </div>
+        <div class="podcast-item-desc">
+          悬空寺为什么挂在悬崖上1500年不倒？应县木塔用了54种斗拱、没一根铁钉，怎么就千年不倒？还有梁思成冒死测量的故事。两座建筑奇迹的工程智慧，一次讲透。
+        </div>
+        <div class="podcast-item-tags">
+          <span class="podcast-tag">🔥 TOP2必考</span>
+          <span class="podcast-tag">建筑智慧</span>
+          <span class="podcast-tag">三教合一</span>
+          <span class="podcast-tag">Day2/5 路上听</span>
+        </div>
+        <a class="podcast-listen-btn" href="https://www.coze.cn/s/6BIgCgoEho8/" target="_blank">▶ 点击播放</a>
+      </div>
+      <!-- 播客第3期 -->
+      <div class="podcast-item">
+        <div class="podcast-item-header">
+          <div class="podcast-icon">🛕</div>
+          <div>
+            <div class="podcast-item-title">第3期：华严寺与善化寺——辽金佛寺里的密码</div>
+            <div class="podcast-item-meta">双人对话 · 约10分钟 · 七下第7课</div>
+          </div>
+        </div>
+        <div class="podcast-item-desc">
+          为什么华严寺坐西朝东？"东方维纳斯"合掌露齿菩萨凭什么被封最美菩萨像？辽代为什么继承唐代建筑风格而不学宋代？Day1逛古城前听这期，看到每尊塑像都有故事。
+        </div>
+        <div class="podcast-item-tags">
+          <span class="podcast-tag">辽金建筑</span>
+          <span class="podcast-tag">东方维纳斯</span>
+          <span class="podcast-tag">契丹崇日</span>
+          <span class="podcast-tag">Day1 古城听</span>
+        </div>
+        <a class="podcast-listen-btn" href="https://www.coze.cn/s/QZDtDLgsHvQ/" target="_blank">▶ 点击播放</a>
+      </div>
+
+      <!-- 播客第4期 -->
+      <div class="podcast-item">
+        <div class="podcast-item-header">
+          <div class="podcast-icon">🐉</div>
+          <div>
+            <div class="podcast-item-title">第4期：九龙壁与古城墙——大明王朝的边城</div>
+            <div class="podcast-item-meta">双人对话 · 约10分钟 · 七下第14/16课</div>
+          </div>
+        </div>
+        <div class="podcast-item-desc">
+          大同九龙壁比故宫的还大还早350年！426块琉璃构件拼出来的九条龙，还藏着工匠的秘密。明代为什么要把大同建成"九边重镇"之首？登城墙前听这期，每一步都是历史。
+        </div>
+        <div class="podcast-item-tags">
+          <span class="podcast-tag">明代藩王</span>
+          <span class="podcast-tag">九边重镇</span>
+          <span class="podcast-tag">琉璃工艺</span>
+          <span class="podcast-tag">Day1/4 古城听</span>
+        </div>
+        <a class="podcast-listen-btn" href="https://www.coze.cn/s/7wq8fjBWkh8/" target="_blank">▶ 点击播放</a>
+      </div>
+
+      <!-- 播客第5期 -->
+      <div class="podcast-item">
+        <div class="podcast-item-header">
+          <div class="podcast-icon">🌾</div>
+          <div>
+            <div class="podcast-item-title">第5期：从大同到草原——开车穿越千年农牧分界线</div>
+            <div class="podcast-item-meta">双人对话 · 约10分钟 · 七下第10-11课</div>
+          </div>
+        </div>
+        <div class="podcast-item-desc">
+          自驾从大同到锡林郭勒，车窗外的风景就是中国历史的缩影：农田变草原、砖瓦房变蒙古包。这条400毫米降水量线为什么决定了农耕和游牧的边界？成吉思汗是怎么崛起的？草原上长大的孩子学什么？最适合自驾路上听的一期！
+        </div>
+        <div class="podcast-item-tags">
+          <span class="podcast-tag">🚗 自驾专属</span>
+          <span class="podcast-tag">游牧文明</span>
+          <span class="podcast-tag">农牧交融</span>
+          <span class="podcast-tag">Day3 车上听</span>
+        </div>
+        <a class="podcast-listen-btn" href="https://www.coze.cn/s/s4ftzt0tSbU/" target="_blank">▶ 点击播放</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div class="footer">
+  <div class="divider-line"></div>
+  📚 教材来源：人教版初中历史（统编版）七年级上/下册<br>
+  📂 Mac本地教材位置：<code>/Users/lijie/Downloads/knowledge/10-历史/</code><br>
+  📅 整理时间：2026年8月16日 ｜ 🗺️ 行程时间：2026年8月25日-29日<br>
+  <span style="color:var(--gold);">—— 带着课本去旅行 ——</span>
+</div>
+
+</body>
+</html>
